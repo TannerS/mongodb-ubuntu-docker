@@ -1,3 +1,6 @@
 A simple dockerfile for mongodb on Ubuntu:xenial
 
-Instructions coming soon
+## Run ##
+
+docker run -it mongo-ubuntu mongod
+

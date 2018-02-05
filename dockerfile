@@ -17,5 +17,6 @@ RUN apt-get update -qq \
 && mkdir -p /data/db \
 # https://stackoverflow.com/questions/43817024/how-to-disable-the-mongo-dbshell-history-file
 && echo "" > ~/.dbshell \
-&& chmod 0 ~/.dbshell \
+&& chmod 0 ~/.dbshell
+
 CMD mongod

@@ -19,4 +19,6 @@ RUN apt-get update -qq \
 && echo "" > ~/.dbshell \
 && chmod 0 ~/.dbshell
 
-CMD mongod
+EXPOSE 27017 28017
+
+CMD mongod --port 27017 --dbpath /data/db --bind_ip_all # or --bind_ip <ipaddress>
